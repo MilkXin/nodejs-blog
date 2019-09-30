@@ -29,7 +29,24 @@ const getDetail = (author, keyword) => {
     }
 }
 
+const newBlog = (blogData = {}) => {
+    //blogData是一个博客对象，包含 title content 属性
+
+    return {
+        id: 3 //表示新建博客，插入到数据表里的id
+    }
+}
+
+const updateBlogData = (id, blogData = {}) => {
+    //id 要更新博客的id
+    //blogData是一个博客对象，包含 title content 属性
+
+    return true
+}
+
 module.exports = {
     getList,
-    getDetail
+    getDetail,
+    newBlog,
+    updateBlogData
 }
