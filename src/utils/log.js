@@ -18,7 +18,7 @@ function createWriteStream(fileName) {
 //写访问日志
 const accessWriteStream = createWriteStream('access.log')
 function access (log) {
-    writeLog(writeStream, log)
+    writeLog(accessWriteStream, log)
 }
 
 module.exports = {
