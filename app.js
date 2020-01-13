@@ -110,7 +110,7 @@ const serverHandle = (req, res) => {
             req.session = sessionData
         }
 
-        console.log('req.session:', req.sessionData)
+        console.log('req.session:', req.session)
 
         return getPostData(req)
     }).then(postData => {
