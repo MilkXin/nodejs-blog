@@ -128,7 +128,7 @@ const serverHandle = (req, res) => {
         if (blogResult) {
             blogResult.then(blogData => {
                 if (needSetCookie) {
-                    res.setHeader('Set-Cookie', `userid=${userId}; path=/; httpOnly; expires=${getCookieExpires()}`)
+                    res.setHeader('Set-Cookie', `userId=${userId}; path=/; httpOnly; expires=${getCookieExpires()}`)
                 }
                 res.end(
                     JSON.stringify(blogData)
@@ -149,7 +149,7 @@ const serverHandle = (req, res) => {
         if (userResult) {
             userResult.then(userData => {
                 if (needSetCookie) {
-                    res.setHeader('Set-Cookie', `userid=${userId}; path=/; httpOnly; expires=${getCookieExpires()}`)
+                    res.setHeader('Set-Cookie', `userId=${userId}; path=/; httpOnly; expires=${getCookieExpires()}`)
                 }
                 res.end(
                     JSON.stringify(userData)
