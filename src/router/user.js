@@ -1,6 +1,6 @@
 const { login} = require('../controller/user')
 const { SuccessModel, ErrorModel } = require('../model/resModel')
-const { set } = require('./src/db/redis')
+const { set } = require('../db/redis')
 
 //获取 cookie的过期时间
 const getCookieExpires = () => {
